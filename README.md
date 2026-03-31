@@ -1,6 +1,10 @@
 # Disk Cleanup Automation & Monitoring System
 Automated disk cleanup system that monitors disk usage, triggers cleanup, logs activity, sends alerts, and provides a web dashboard. 
 
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Flask](https://img.shields.io/badge/Flask-WebApp-green)
+![Linux](https://img.shields.io/badge/Linux-Automation-orange)
+
 ## Featurs
 - Real-time Disk Usage Monitoring
 - Automatic Cleanup when threshold is exceeded
