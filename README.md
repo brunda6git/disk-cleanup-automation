@@ -10,26 +10,30 @@ A fully automated disk monitoring system that tracks disk usage, performs cleanu
 - Cron Job Scheduling (Automation)
 
 ## Project Structure
+
+```
 disk-cleanup-automation/
-|
+│
 ├── dashboard/
-│ ├── app.py
-│ ├── templates/
-│ │ ├── index.html
-│ │ └── logs.html
-│ └── static/
-│   └── style.css
+│   ├── static/
+│   │   └── style.css
+│   ├── templates/
+│   │   ├── index.html
+│   │   └── logs.html
+│   │   └── app.py
 │
 ├── logs/
-│ └── disk_cleanup.log
-|
+│   └── disk_cleanup.log
+│
 ├── scripts/
-│ └── diskclean.sh
-|
+│   └── diskclean.sh
+│
 ├── screenshots/
-├── requirements.txt
-└── README.md
-
+│
+├── .gitignore
+├── README.md
+└── requirements.txt
+```
 ## How It Works
 1. Cron job runs the shell script periodically  
 2. Script checks disk usage  
