@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>All Logs</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>All Logs</h1>
+
+<div class="log-box">
+
+<table>
+
+<thead>
+<tr>
+<th>Date</th>
+<th>Time</th>
+<th>Status</th>
+<th>Before</th>
+<th>After</th>
+</tr>
+</thead>
+
+<tbody>
+
+{% for log in logs %}
+{% set parts = log.strip().split('|') %}
+
+<tr>
+{% if parts|length >= 5 %}
+
+<td>{{ parts[0].strip() }}</td>
+<td>{{ parts[1].strip() }}</td>
+
+<td>
+{% if "NORMAL" in parts[2] %}
+<span class="badge normal">NORMAL</span>
+{% elif "CLEANUP" in parts[2] %}
+<span class="badge cleanup">CLEANUP</span>
+{% elif "EMAIL" in parts[2] %}
+<span class="badge email">EMAIL</span>
+{% else %}
+{{ parts[2].strip() }}
+{% endif %}
+</td>
+
+<td>{{ parts[3].strip() }}</td>
+<td>{{ parts[4].strip() }}</td>
+
+{% else %}
+
+<td colspan="5">{{ log }}</td>
+
+{% endif %}
+</tr>
+{% endfor %}
+
+</tbody>
+
+</table>
+
+</div>
+
+<div style="text-align:center; margin-top:20px;">
+<a href="{{ url_for('dashboard') }}">
+<button style="padding:10px 20px; font-size:16px; cursor:pointer;">
+Back to Dashboard
+</button>
+</a>
+</div>
+
+</div>
+
+</body>
+</html>

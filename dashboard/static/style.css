@@ -1,0 +1,126 @@
+body{
+    font-family:'Nunito',sans-serif;
+    background:linear-gradient(135deg,#e6dcff,#f5edff);
+    margin:0;
+    padding:0;
+}
+
+/* Main container */
+
+.container{
+    width:60%;
+    margin:80px auto;
+    text-align:center;
+}
+
+/* Title */
+
+h1{
+    color:#5a4c8a;
+    margin-bottom:30px;
+}
+
+/* Usage box */
+
+.usage-box{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.12);
+    margin-bottom:30px;
+}
+
+.usage-percent{
+    font-size:40px;
+    font-weight:700;
+    color:#6b5cff;
+    margin-top:10px;
+}
+
+/* Progress bar */
+
+.progress-bar{
+    width:100%;
+    height:25px;
+    background:#eee9ff;
+    border-radius:20px;
+    overflow:hidden;
+    margin-top:20px;
+}
+
+.progress{
+    height:100%;
+    background:linear-gradient(90deg,#a78bfa,#7c6cff);
+}
+
+/* Logs box */
+
+.log-box{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.12);
+    max-height:250px;
+    overflow-y:auto;
+}
+
+/* Table */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    font-size:14px;
+}
+
+thead{
+    background:#efe9ff;
+}
+
+th{
+    padding:10px;
+    text-align:center;
+    color:#5a4c8a;
+}
+
+td{
+    padding:8px;
+    text-align:center;
+    border-bottom:1px solid #eee;
+}
+
+tr:hover{
+    background:#f7f3ff;
+}
+
+/* scrollbar */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#a78bfa;
+    border-radius:10px;
+}
+
+/* Color Badge */
+
+.badge{
+padding:4px 10px;
+border-radius:10px;
+font-size:12px;
+font-weight:600;
+color:white;
+}
+
+.normal{
+background:#4CAF50;
+}
+
+.cleanup{
+background:#ff9800;
+}
+
+.email{
+background:#7b61ff;
+}
