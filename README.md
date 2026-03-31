@@ -1,5 +1,5 @@
 # Disk Cleanup Automation & Monitoring System
-A fully automated disk monitoring system that tracks disk usage, performs cleanup when thresholds are exceeded, logs system activity, and provides a real-time web dashboard.
+Automated disk cleanup system that monitors disk usage, triggers cleanup, logs activity, sends alerts, and provides a web dashboard. 
 
 ## Featurs
 - Real-time Disk Usage Monitoring
@@ -96,7 +96,11 @@ To enable email alerts, you need to configure your own email credentials.
 Steps:
 1. Enable 2-Step Verification on your Gmail account  
 2. Generate an App Password from Google Account settings  
-3. Use the App Password for sending emails via the script   
+3. Use the App Password for sending emails via the script
+
+## Why this project?
+Manual disk cleanup is inefficient and error-prone. 
+This project automates monitoring and cleanup to maintain system performance.
 
 ## Author
 Brunda
