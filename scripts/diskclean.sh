@@ -7,8 +7,9 @@ MONITOR_DIR="/"
 THRESHOLD=80
 BASE_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 LOGFILE="$BASE_DIR/logs/disk_cleanup.log"
+COUNT=0
 
-# Change this email to recieve alerts
+# Email for alerts (update before use)
 EMAIL="your_email@gmail.com"
 
 # ===== COLORS =====
