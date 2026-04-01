@@ -58,6 +58,7 @@ disk-cleanup-automation/
 ## Setup Instructions
 ### 1. Clone the repository
 git clone https://github.com/brunda6git/disk-cleanup-automation.git
+
 cd disk-cleanup-automation
 
 ### 2. Install dependencies
@@ -74,7 +75,7 @@ http://127.0.0.1:5000
 ## Setup Cron Job
 crontab -e
 Add:
-0 * * * * /home/<your-username>/disk-cleanup-automation/scripts/diskclean.sh
+0 * * * * /home/$(whoami)/disk-cleanup-automation/scripts/diskclean.sh
 
 
 ## Screenshots
