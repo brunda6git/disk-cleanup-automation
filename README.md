@@ -27,7 +27,7 @@ disk-cleanup-automation/
 │   ├── templates/
 │   │   ├── index.html
 │   │   └── logs.html
-│   |── app.py
+│   ├── app.py
 │
 ├── logs/
 │   └── disk_cleanup.log
