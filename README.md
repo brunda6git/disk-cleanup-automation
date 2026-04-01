@@ -27,7 +27,7 @@ disk-cleanup-automation/
 │   ├── templates/
 │   │   ├── index.html
 │   │   └── logs.html
-│   │   └── app.py
+│   |── app.py
 │
 ├── logs/
 │   └── disk_cleanup.log
@@ -57,7 +57,7 @@ disk-cleanup-automation/
 
 ## Setup Instructions
 ### 1. Clone the repository
-git clone <your-repo-link>
+git clone https://github.com/brunda6git/disk-cleanup-automation.git
 cd disk-cleanup-automation
 
 ### 2. Install dependencies
